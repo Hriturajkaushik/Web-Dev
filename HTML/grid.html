@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display : grid;  /*  With this the container get the grid property*/
+            grid-template-columns : auto auto auto; /* This decides the size of columns */ 
+            background-color: aquamarine;  /* Color of the columns*/
+            padding: 10px ; /* The gap between the outer border and container border */
+        }
+        .container div{      
+            /* Used to style the elements in the grid */
+            background-color: beige; /* Color of the block*/
+            border: 2px solid black; /* border size and color*/
+            padding: 10px; /* Space between the text and the block border*/
+            font-size: 10px; /* size of the text/number*/
+            text-align: center; /* Align the text to the centre of the block*/
+        }
+    </style>
+</head>
+<body>
+     <h1>Grid Layout</h1>
+
+ <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+</div> 
+</body>
+</html>
