@@ -43,11 +43,11 @@
         .container2 div {
             background-color: red;
             border: 2px solid black;
+            height: fit-content;
             font-size: 10px;
             padding: 5px;
             text-align: center;
         }
-
 
         .container3 {
             display: grid;
@@ -62,6 +62,21 @@
             background-color: wheat;
             border: 20px red;
             font-size: medium;
+            text-align: center;
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: auto 200px 200px 200px auto;
+            background-color: blue;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        .container4 div {
+            background-color: white;
+            border: 5px;
+            font-size: large;
             text-align: center;
         }
     </style>
@@ -100,6 +115,14 @@
         <div>5</div>
     </div>
 
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
 </body>
 
 </html>
@@ -124,10 +147,19 @@
         }
 
         .upper div {
-            background-color: rgb(223, 167, 94);
+
             border: 5px;
             font-size: 5px;
             text-align: center;
+        }
+
+        #b1 {
+            border-radius: 20px;
+        }
+
+        #b1:hover {
+            background-color: aqua;
+            transition: 100ms;
         }
     </style>
 </head>
@@ -135,13 +167,13 @@
 <body>
 
     <div class="upper">
-        <div> <button>Home</button></div>
-        <div><button>Menu</button></div>
-        <div><button>Order</button></div>
-        <div><button>Login</button></div>
-        <div><button>Signup</button></div>
-
+        <div> <button id="b1">Home</button></div>
+        <div><button id="b1">Menu</button></div>
+        <div><button id="b1">Order</button></div>
+        <div><button id="b1">Login</button></div>
+        <div><button id="b1">Signup</button></div>
     </div>
+
 </body>
 
 </html>
