@@ -8,43 +8,51 @@
 </head>
 
 <body>
+    <!-- Start of the form -->
     <form>
+        <!-- Text field for user name -->
         <label for="Username">Name:</label>
         <input type="text" name="Username" id="Name">
 
         <br><br>
 
+        <!-- Email input type validates email format -->
         <label for="Email">Email:</label>
         <input type="email" name="Email ID" id="Email">
 
         <br><br>
 
+        <!-- Password field hides entered text -->
         <label for="Password">Password:</label>
         <input type="password" name="Password" id="Password">
 
         <br><br>
 
+        <!-- Date picker lets user choose a date -->
         <label for="Date">Date:</label>
         <input type="date" name="Date" id="Date">
 
         <br><br>
 
+        <!-- Time picker lets user choose a time -->
         <label for="Time">Time</label>
         <input type="time" name="Time" id="Time">
 
         <br><br>
 
+        <!-- Radio buttons allow one gender choice -->
         <label for="Gender">Gender:</label>
         <input type="radio" name="Gender" id="Male" value="Male">
         Male
         <input type="radio" name="Gender" id="Female" value="Female">
         Female
-        <input type="radio" name="Gender" id="N/A">
+        <input type="radio" name="Gender" id="N/A" value="Prefer Not to say">
         Prefer Not to say
-        <!-- All the three options belong to the same name group so if we select one option the other will be automatically be deselect -->
+        <!-- Same name on radios makes them exclusive -->
 
         <br><br>
 
+        <!-- Checkboxes allow multiple selections -->
         <label for="Options">A</label>
         <input type="checkbox" name="Option" id="Option">
         <br>
@@ -62,29 +70,36 @@
 
         <br><br>
 
+        <!-- File input opens file chooser -->
         <label for="File">Upload File</label>
         <input type="file" name="File" id="file">
 
         <br><br>
 
+        <!-- Range slider selects a numeric value -->
         <label for="Volume">Volume</label>
         <input type="range" name="volume" id="volume">
 
         <br><br>
 
+        <!-- Color picker chooses a color -->
         <label for="Color">Color</label>
         <input type="color" name="color" id="color">
 
         <br><br>
 
+        <!-- Button submits the form -->
         <button> <abbr title="Submit the form">Submit</abbr></button>
 
         <br><br>
-          <label for="Comment">Comment</label>
+
+        <!-- Text area for longer comments -->
+        <label for="Comment">Comment</label>
         <textarea name="Comment" id="Comment" rows="10" cols="20"></textarea>
 
         <br><br>
-         
+
+        <!-- Dropdown select for country choice -->
         <label for="Country">Country</label>
         <select name="Country" id="Country">
             <option value="country"> INDIA</option>
@@ -95,7 +110,6 @@
             <option value="country"> GERMANY</option>
         </select>
 
-        
     </form>
 </body>
 
