@@ -8,109 +8,127 @@
 </head>
 
 <body>
-    <!-- Start of the form -->
-    <form>
-        <!-- Text field for user name -->
-        <label for="Username">Name:</label>
-        <input type="text" name="Username" id="Name">
+<form>
+    <center>
+    <br><br>
 
-        <br><br>
+    <!-- Email input type validates email format -->
+    <!-- label: Displays the text for the input -->
+    <!-- for: Must match the input's id -->
+    <!-- id: Unique identifier for the input -->
+    <!-- name: Name sent to the server when the form is submitted -->
+    <label for="Email">Email:</label><br>
+    <input type="email" name="Email ID" id="Email">
 
-        <!-- Email input type validates email format -->
-        <label for="Email">Email:</label>
-        <input type="email" name="Email ID" id="Email">
+    <br><br>
 
-        <br><br>
+    <!-- Password field hides entered text -->
+    <label for="Password">Password:</label><br>
+    <input type="password" name="Password" id="Password">
 
-        <!-- Password field hides entered text -->
-        <label for="Password">Password:</label>
-        <input type="password" name="Password" id="Password">
+    <br><br>
 
-        <br><br>
+    <!-- Date picker lets user choose a date -->
+    <label for="Date">Date:</label><br>
+    <input type="date" name="Date" id="Date">
 
-        <!-- Date picker lets user choose a date -->
-        <label for="Date">Date:</label>
-        <input type="date" name="Date" id="Date">
+    <br><br>
 
-        <br><br>
+    <!-- Time picker lets user choose a time -->
+    <label for="Time">Time:</label><br>
+    <input type="time" name="Time" id="Time">
 
-        <!-- Time picker lets user choose a time -->
-        <label for="Time">Time</label>
-        <input type="time" name="Time" id="Time">
+    <br><br>
 
-        <br><br>
+    <!-- Radio buttons allow one gender choice -->
+    <!-- Same name groups radio buttons so only one can be selected -->
+    <!-- value stores the selected option -->
+    <label>Gender:</label><br>
 
-        <!-- Radio buttons allow one gender choice -->
-        <label for="Gender">Gender:</label>
-        <input type="radio" name="Gender" id="Male" value="Male">
-        Male
-        <input type="radio" name="Gender" id="Female" value="Female">
-        Female
-        <input type="radio" name="Gender" id="N/A" value="Prefer Not to say">
-        Prefer Not to say
-        <!-- Same name on radios makes them exclusive -->
+    <input type="radio" name="Gender" id="Male" value="Male">
+    <label for="Male">Male</label>
 
-        <br><br>
+    <input type="radio" name="Gender" id="Female" value="Female">
+    <label for="Female">Female</label>
 
-        <!-- Checkboxes allow multiple selections -->
-        <label for="Options">A</label>
-        <input type="checkbox" name="Option" id="Option">
-        <br>
-        <label for="Options">B</label>
-        <input type="checkbox" name="Option" id="Option">
-        <br>
-        <label for="Options">C</label>
-        <input type="checkbox" name="Option" id="Option">
-        <br>
-        <label for="Options">D</label>
-        <input type="checkbox" name="Option" id="Option">
-        <br>
-        <label for="Options">E</label>
-        <input type="checkbox" name="Option" id="Option">
+    <input type="radio" name="Gender" id="NA" value="Prefer Not to say">
+    <label for="NA">Prefer Not to say</label>
 
-        <br><br>
+    <br><br>
 
-        <!-- File input opens file chooser -->
-        <label for="File">Upload File</label>
-        <input type="file" name="File" id="file">
+    <!-- Checkboxes allow multiple selections -->
+    <!-- Multiple checkboxes can have the same name -->
+    <!-- Each checkbox should have a unique id and value -->
+    <label>Select Options</label><br>
 
-        <br><br>
+    <input type="checkbox" name="Option" id="A" value="A">
+    <label for="A">A</label><br>
 
-        <!-- Range slider selects a numeric value -->
-        <label for="Volume">Volume</label>
-        <input type="range" name="volume" id="volume">
+    <input type="checkbox" name="Option" id="B" value="B">
+    <label for="B">B</label><br>
 
-        <br><br>
+    <input type="checkbox" name="Option" id="C" value="C">
+    <label for="C">C</label><br>
 
-        <!-- Color picker chooses a color -->
-        <label for="Color">Color</label>
-        <input type="color" name="color" id="color">
+    <input type="checkbox" name="Option" id="D" value="D">
+    <label for="D">D</label><br>
 
-        <br><br>
+    <input type="checkbox" name="Option" id="E" value="E">
+    <label for="E">E</label>
 
-        <!-- Button submits the form -->
-        <button> <abbr title="Submit the form">Submit</abbr></button>
+    <br><br>
 
-        <br><br>
+    <!-- File input opens file chooser -->
+    <label for="File">Upload File</label><br>
+    <input type="file" name="File" id="File">
 
-        <!-- Text area for longer comments -->
-        <label for="Comment">Comment</label>
-        <textarea name="Comment" id="Comment" rows="10" cols="20"></textarea>
+    <br><br>
 
-        <br><br>
+    <!-- Range slider selects a numeric value -->
+    <!-- value can set the initial slider position -->
+    <label for="Volume">Volume</label><br>
+    <input type="range" name="Volume" id="Volume" value="50">
 
-        <!-- Dropdown select for country choice -->
-        <label for="Country">Country</label>
-        <select name="Country" id="Country">
-            <option value="country"> INDIA</option>
-            <option value="country"> INDONESIA</option>
-            <option value="country"> USA</option>
-            <option value="country"> CANADA</option>
-            <option value="country"> FRANCE</option>
-            <option value="country"> GERMANY</option>
-        </select>
+    <br><br>
 
-    </form>
+    <!-- Color picker chooses a color -->
+    <!-- value sets the default color -->
+    <label for="Color">Color</label><br>
+    <input type="color" name="Color" id="Color" value="#ff0000">
+
+    <br><br>
+
+    <!-- Text area for longer comments -->
+    <!-- rows = height, cols = width -->
+    <label for="Comment">Comment</label><br>
+    <textarea name="Comment" id="Comment" rows="10" cols="20"></textarea>
+
+    <br><br>
+
+    <!-- Dropdown select for country choice -->
+    <!-- select creates the dropdown -->
+    <!-- option represents each item -->
+    <!-- value is submitted to the server -->
+    <label for="Country">Country</label><br>
+    <select name="Country" id="Country">
+        <option value="India">INDIA</option>
+        <option value="Indonesia">INDONESIA</option>
+        <option value="USA">USA</option>
+        <option value="Canada">CANADA</option>
+        <option value="France">FRANCE</option>
+        <option value="Germany">GERMANY</option>
+    </select>
+
+    <br><br>
+
+    <!-- Button submits the form -->
+    <!-- type="submit" sends the form data -->
+    <button type="submit">
+        <abbr title="Submit the form">Submit</abbr>
+    </button>
+
+</form>
+</center>
 </body>
 
 </html>
