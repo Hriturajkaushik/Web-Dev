@@ -8,127 +8,127 @@
 </head>
 
 <body>
-    <form>
-        <center>
-            <br><br>
+<form>
+    <center>
+    <br><br>
 
-            <!-- Email input type validates email format -->
-            <!-- label: Displays the text for the input -->
-            <!-- for: Must match the input's id -->
-            <!-- id: Unique identifier for the input -->
-            <!-- name: Name sent to the server when the form is submitted -->
-            <label for="Email">Email:</label><br>
-            <input type="email" name="Email ID" id="Email">
+    <!-- Email input type validates email format -->
+    <!-- label: Displays the text for the input -->
+    <!-- for: Must match the input's id -->
+    <!-- id: Unique identifier for the input -->
+    <!-- name: Name sent to the server when the form is submitted -->
+    <label for="Email">Email:</label><br>
+    <input type="email" name="Email ID" id="Email">
 
-            <br><br>
+    <br><br>
 
-            <!-- Password field hides entered text -->
-            <label for="Password">Password:</label><br>
-            <input type="password" name="Password" id="Password">
+    <!-- Password field hides entered text -->
+    <label for="Password">Password:</label><br>
+    <input type="password" name="Password" id="Password">
 
-            <br><br>
+    <br><br>
 
-            <!-- Date picker lets user choose a date -->
-            <label for="Date">Date:</label><br>
-            <input type="date" name="Date" id="Date">
+    <!-- Date picker lets user choose a date -->
+    <label for="Date">Date:</label><br>
+    <input type="date" name="Date" id="Date">
 
-            <br><br>
+    <br><br>
 
-            <!-- Time picker lets user choose a time -->
-            <label for="Time">Time:</label><br>
-            <input type="time" name="Time" id="Time">
+    <!-- Time picker lets user choose a time -->
+    <label for="Time">Time:</label><br>
+    <input type="time" name="Time" id="Time">
 
-            <br><br>
+    <br><br>
 
-            <!-- Radio buttons allow one gender choice -->
-            <!-- Same name groups radio buttons so only one can be selected -->
-            <!-- value stores the selected option -->
-            <label>Gender:</label><br>
+    <!-- Radio buttons allow one gender choice -->
+    <!-- Same name groups radio buttons so only one can be selected -->
+    <!-- value stores the selected option -->
+    <label>Gender:</label><br>
 
-            <input type="radio" name="Gender" id="Male" value="Male">
-            <label for="Male">Male</label>
+    <input type="radio" name="Gender" id="Male" value="Male">
+    <label for="Male">Male</label>
 
-            <input type="radio" name="Gender" id="Female" value="Female">
-            <label for="Female">Female</label>
+    <input type="radio" name="Gender" id="Female" value="Female">
+    <label for="Female">Female</label>
 
-            <input type="radio" name="Gender" id="NA" value="Prefer Not to say">
-            <label for="NA">Prefer Not to say</label>
+    <input type="radio" name="Gender" id="NA" value="Prefer Not to say">
+    <label for="NA">Prefer Not to say</label>
 
-            <br><br>
+    <br><br>
 
-            <!-- Checkboxes allow multiple selections -->
-            <!-- Multiple checkboxes can have the same name -->
-            <!-- Each checkbox should have a unique id and value -->
-            <label>Select Options</label><br>
+    <!-- Checkboxes allow multiple selections -->
+    <!-- Multiple checkboxes can have the same name -->
+    <!-- Each checkbox should have a unique id and value -->
+    <label>Select Options</label><br>
 
-            <input type="checkbox" name="Option" id="A" value="A">
-            <label for="A">A</label><br>
+    <input type="checkbox" name="Option" id="A" value="A">
+    <label for="A">A</label><br>
 
-            <input type="checkbox" name="Option" id="B" value="B">
-            <label for="B">B</label><br>
+    <input type="checkbox" name="Option" id="B" value="B">
+    <label for="B">B</label><br>
 
-            <input type="checkbox" name="Option" id="C" value="C">
-            <label for="C">C</label><br>
+    <input type="checkbox" name="Option" id="C" value="C">
+    <label for="C">C</label><br>
 
-            <input type="checkbox" name="Option" id="D" value="D">
-            <label for="D">D</label><br>
+    <input type="checkbox" name="Option" id="D" value="D">
+    <label for="D">D</label><br>
 
-            <input type="checkbox" name="Option" id="E" value="E">
-            <label for="E">E</label>
+    <input type="checkbox" name="Option" id="E" value="E">
+    <label for="E">E</label>
 
-            <br><br>
+    <br><br>
 
-            <!-- File input opens file chooser -->
-            <label for="File">Upload File</label><br>
-            <input type="file" name="File" id="File">
+    <!-- File input opens file chooser -->
+    <label for="File">Upload File</label><br>
+    <input type="file" name="File" id="File">
 
-            <br><br>
+    <br><br>
 
-            <!-- Range slider selects a numeric value -->
-            <!-- value can set the initial slider position -->
-            <label for="Volume">Volume</label><br>
-            <input type="range" name="Volume" id="Volume" value="50">
+    <!-- Range slider selects a numeric value -->
+    <!-- value can set the initial slider position -->
+    <label for="Volume">Volume</label><br>
+    <input type="range" name="Volume" id="Volume" value="50">
 
-            <br><br>
+    <br><br>
 
-            <!-- Color picker chooses a color -->
-            <!-- value sets the default color -->
-            <label for="Color">Color</label><br>
-            <input type="color" name="Color" id="Color" value="#ff0000">
+    <!-- Color picker chooses a color -->
+    <!-- value sets the default color -->
+    <label for="Color">Color</label><br>
+    <input type="color" name="Color" id="Color" value="#ff0000">
 
-            <br><br>
+    <br><br>
 
-            <!-- Text area for longer comments -->
-            <!-- rows = height, cols = width -->
-            <label for="Comment">Comment</label><br>
-            <textarea name="Comment" id="Comment" rows="10" cols="20"></textarea>
+    <!-- Text area for longer comments -->
+    <!-- rows = height, cols = width -->
+    <label for="Comment">Comment</label><br>
+    <textarea name="Comment" id="Comment" rows="10" cols="20"></textarea>
 
-            <br><br>
+    <br><br>
 
-            <!-- Dropdown select for country choice -->
-            <!-- select creates the dropdown -->
-            <!-- option represents each item -->
-            <!-- value is submitted to the server -->
-            <label for="Country">Country</label><br>
-            <select name="Country" id="Country">
-                <option value="India">INDIA</option>
-                <option value="Indonesia">INDONESIA</option>
-                <option value="USA">USA</option>
-                <option value="Canada">CANADA</option>
-                <option value="France">FRANCE</option>
-                <option value="Germany">GERMANY</option>
-            </select>
+    <!-- Dropdown select for country choice -->
+    <!-- select creates the dropdown -->
+    <!-- option represents each item -->
+    <!-- value is submitted to the server -->
+    <label for="Country">Country</label><br>
+    <select name="Country" id="Country">
+        <option value="India">INDIA</option>
+        <option value="Indonesia">INDONESIA</option>
+        <option value="USA">USA</option>
+        <option value="Canada">CANADA</option>
+        <option value="France">FRANCE</option>
+        <option value="Germany">GERMANY</option>
+    </select>
 
-            <br><br>
+    <br><br>
 
-            <!-- Button submits the form -->
-            <!-- type="submit" sends the form data -->
-            <button type="submit">
-                <abbr title="Submit the form">Submit</abbr>
-            </button>
+    <!-- Button submits the form -->
+    <!-- type="submit" sends the form data -->
+    <button type="submit">
+        <abbr title="Submit the form">Submit</abbr>
+    </button>
 
-    </form>
-    </center>
+</form>
+</center>
 </body>
 
 </html>
