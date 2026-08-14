@@ -7,63 +7,80 @@
     <title>Document</title>
 
     <style>
-        .container {     display: grid;
+        .container {
+            display: grid;
             /*  With this the container get the grid property*/
-            grid-template-columns: auto auto auto;        /* This decides the size of columns */
-        background-color: aquamarine; /* Color of the columns*/
-        padding: 5px;  /* The gap between the outer border and container border */
-            gap: 5px;        }
+            grid-template-columns: auto auto auto;
+            /* This decides the size of columns */
+            background-color: aquamarine;
+            /* Color of the columns*/
+            padding: 5px;
+            /* The gap between the outer border and container border */
+            gap: 5px;
+        }
 
         .container div {
             /* Used to style the elements in the grid */
-        background-color: beige;
-        /* Color of the block*/
+            background-color: beige;
+            /* Color of the block*/
             border: 2px solid black;
-          /* border size and color*/
+            /* border size and color*/
             padding: 10px;
-            /* Space between the text and the block border*/  font-size: 10px;
+            /* Space between the text and the block border*/
+            font-size: 10px;
             /* size of the text/number*/
-            text-align: center;  /* Align the text to the centre of the block*/
+            text-align: center;
+            /* Align the text to the centre of the block*/
         }
 
-        .container2 {  display: inline-grid;
-            grid-template-columns: auto auto auto;  background-color: rgb(152, 194, 152);
-            gap: 5px;   padding: 5px;
+        .container2 {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(152, 194, 152);
+            gap: 5px;
+            padding: 5px;
         }
 
         .container2 div {
             background-color: rgb(229, 216, 120);
-            border: 2px solid black;  height: fit-content;
-            font-size: 10px;   padding: 5px;
+            border: 2px solid black;
+            height: fit-content;
+            font-size: 10px;
+            padding: 5px;
             text-align: center;
         }
 
         .container3 {
-            display: grid;    grid-template-columns: 100ps 100px 100px;
+            display: grid;
+            grid-template-columns: 100ps 100px 100px;
             background-color: rgb(205, 152, 248);
             gap: 2px;
             padding: 5px;
-        }.container3 div {
+        }
+
+        .container3 div {
 
             background-color: wheat;
-        border: 20px red;font-size: medium;
+            border: 20px red;
+            font-size: medium;
             text-align: center;
         }
 
         .container4 {
             display: grid;
-        grid-template-columns: auto 200px 200px 200px auto;
-            background-color: blue;            gap: 5px;
+            grid-template-columns: auto 200px 200px 200px auto;
+            background-color: blue;
+            gap: 5px;
             padding: 5px;
         }
 
         .container4 div {
             background-color: white;
-             border: 5px;
+            border: 5px;
             font-size: large;
             text-align: center;
         }
-     </style>
+    </style>
 </head>
 
 <body>
@@ -73,33 +90,34 @@
         <em>inline-grid</em>.
     </p>
 
-    <p>Direct child element(s) of the grid container automatically becomes grid items</p> <div class="container">
+    <p>Direct child element(s) of the grid container automatically becomes grid items</p>
+    <div class="container">
         <div>1</div>
         <div>2</div>
- <div>3</div>
+        <div>3</div>
         <div>4</div>
         <div>5</div>
     </div>
-<div class="container2">
+    <div class="container2">
         <div>1</div>
- <div>2</div>
+        <div>2</div>
         <div>3</div>
         <div>4</div>
- <div>5</div>
+        <div>5</div>
     </div>
 
 
     <div class="container3">
         <div>1</div>
-<div>2</div>
+        <div>2</div>
         <div>3</div>
- <div>4</div>
+        <div>4</div>
         <div>5</div>
     </div>
- <div class="container4">
+    <div class="container4">
         <div>1</div>
         <div>2</div>
- <div>3</div>
+        <div>3</div>
         <div>4</div>
         <div>5</div>
     </div>
