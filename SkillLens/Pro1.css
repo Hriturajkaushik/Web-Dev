@@ -1,0 +1,285 @@
+/* =============================== NAVBAR =============================== */
+
+.upper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: rgb(235, 229, 229);
+    gap: 5px;
+    padding: 5px;
+}
+
+.upper div {
+    text-align: center;
+}
+
+.b1 {
+    padding: 10px 25px;
+    /* border: none; */
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: white;
+    transition: 1s;
+}
+
+.b1:hover {
+    background-color: rgb(222, 73, 163);
+    color: white;
+    border-radius: 5000px;
+}
+
+
+/* =============================== CARDS =============================== */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: 200px;
+    min-height: 300px;
+    padding: 25px;
+
+    background: rgb(175, 170, 227);
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 5px;
+
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+
+/* Card Hover */
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+    transform: translateY(-10px);
+}
+
+
+/* =============================== CARD HEADINGS =============================== */
+
+.card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2,
+.card5 h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* =============================== FEATURES =============================== */
+
+.features1,
+.features2,
+.features3,
+.features4,
+.features5 {
+    text-align: center;
+}
+
+.features1 p,
+.features2 p,
+.features3 p,
+.features4 p,
+.features5 p {
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+
+/* =============================== LEARN MORE =============================== */
+
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a,
+.card5 a {
+    display: inline-block;
+    margin-top: 20px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card1 a:hover,
+.card2 a:hover,
+.card3 a:hover,
+.card4 a:hover,
+.card5 a:hover {
+    color: rgb(192, 82, 151);
+}
+
+
+/* =============================== HOW IT WORKS =============================== */
+
+#S1 {
+    background: #000;
+    color: white;
+
+    padding: 50px 30px;
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+
+/* Small heading */
+
+#h4 {
+    display: inline-block;
+
+    background-color: #f0edff;
+    color: rgb(121, 97, 217);
+
+    border-radius: 20px;
+
+    padding: 8px 20px;
+
+    margin: 0 auto 20px auto;
+}
+
+
+/* Main heading */
+
+#S1 h1 {
+    margin-bottom: 10px;
+}
+
+#S1 h1 span {
+    color: rgb(218, 138, 218);
+}
+
+
+/* Description */
+
+#S1>p {
+    margin-bottom: 40px;
+}
+
+
+/* =============================== WORKFLOW =============================== */
+
+.work-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+
+/* Individual step */
+
+.work-step {
+    width: 150px;
+
+    text-align: center;
+}
+
+
+/* Number Circle */
+
+.step-number {
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 15px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(166, 124, 204);
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Step heading */
+
+.work-step h3 {
+    margin: 10px 0;
+
+    font-size: 15px;
+}
+
+
+/* Step paragraph */
+
+.work-step p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #cccccc;
+}
+
+
+/* Arrows */
+
+.arrow {
+    font-size: 35px;
+
+    color: rgb(218, 138, 218);
+
+    font-weight: bold;
+}
+
+
+/* =============================== START BUTTON =============================== */
+
+#B1 {
+    margin-top: 40px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 100px;
+
+    background-color: rgb(166, 124, 204);
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#B1:hover {
+    background-color: rgb(218, 138, 218);
+
+    transform: scale(1.05);
+}
