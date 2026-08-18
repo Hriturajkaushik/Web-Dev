@@ -6,11 +6,15 @@ body {
 
 .dashboard{
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 200px 1fr;
     min-height: 100vh;
 }
 
 .sidebar{
     background: #151d32;
     padding: 20px;
+}
+
+.sidebar h2{
+    color: #b9a7ff;
 }
