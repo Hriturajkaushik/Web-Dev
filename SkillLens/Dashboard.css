@@ -18,3 +18,23 @@ body {
 .sidebar h2{
     color: #b9a7ff;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding: 0 25px;
+}
+
+.stat-card{
+    background: #141e32;
+    padding: 18px;
+    border-radius: 10px;
+}
