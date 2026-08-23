@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.dashboard{
+.dashboard {
     display: grid;
     grid-template-columns: 200px 1fr;
     min-height: 100vh;
@@ -18,16 +18,16 @@ body {
     margin-top: 25px;
 }
 
-.sidebar{
+.sidebar {
     background: #151d32;
     padding: 20px;
 }
 
-.sidebar h2{
+.sidebar h2 {
     color: #b9a7ff;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,21 +38,21 @@ body {
     font-size: 20px;
 }
 
-.stats{
+.stats {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     padding: 0 25px;
 }
 
-.stat-card{
+.stat-card {
     min-height: 100px;
     background: #141e32;
     padding: 18px;
     border-radius: 10px;
 }
 
-.middle{
+.middle {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
@@ -60,9 +60,9 @@ body {
 }
 
 .score-card,
-.skill-card{
+.skill-card {
     background: #141e32;
     border-radius: 10px;
     padding: 20px;
-    min-height:250px;
+    min-height: 250px;
 }
